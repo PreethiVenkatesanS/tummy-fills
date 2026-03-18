@@ -100,7 +100,7 @@ const Home: React.FC<HomeProps> = ({ activeCategory }) => {
           >
             <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl shadow-orange-950/20 transform hover:scale-[1.02] transition-transform duration-500 border-8 border-white">
               <img 
-                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=800"
+                src="/images/heroimg.jpg"
                 alt="Gourmet Food Platter"
                 className="w-full h-[500px] object-cover"
               />

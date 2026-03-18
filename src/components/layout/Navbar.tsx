@@ -28,21 +28,25 @@ const Navbar: React.FC<NavbarProps> = ({ onMenuClick, onCartClick, cartCount }) 
   return (
     <nav className="sticky top-0 z-50 flex h-16 w-full items-center justify-between bg-gray-200 px-4 backdrop-blur-md border-b border-zinc-100">
       {/* Left: Logo and Mobile Menu */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center">
         <button 
           onClick={onMenuClick}
           className="lg:hidden p-2 rounded-lg hover:bg-zinc-100 transition-colors"
         >
           <Menu className="w-6 h-6 text-zinc-600" />
         </button>
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center text-white font-bold text-xl">
             S
           </div>
           <span className="text-xl font-bold tracking-tight text-zinc-900 hidden sm:block">
             Snack<span className="text-orange-500">Box</span>
           </span>
-        </div>
+        </div> */}
+        <img src="/images/logoimg.png" alt="logo" className="w-16 h-16"/>
+        <span className="text-xl font-bold tracking-tight text-zinc-900 hidden sm:block">
+          Tummy Fills
+        </span>
       </div>
 
       {/* Center: Quotes */}
